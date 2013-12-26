@@ -6,3 +6,7 @@ config/client_session_key.aes
 *.sqlite3
 .hsenv*
 yesod-devel/
+
+*.swp
+*.keter
+static/combined/
