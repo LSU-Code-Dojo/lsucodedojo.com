@@ -1,0 +1,20 @@
+Default: &defaults
+  database: LsuCodeDojo.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: LsuCodeDojo_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: LsuCodeDojo_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: LsuCodeDojo_production.sqlite3
+  poolsize: 100
+  <<: *defaults
